@@ -1,0 +1,27 @@
+# Main Program
+# Importing utility module
+import utility
+print("===== PYTHON UTILITY MODULE =====")
+# Email validation
+email = "student@gmail.com"
+print("\nEmail:", email)
+print("Valid Email:", utility.validate_email(email))
+# Text formatting
+name = "  python programming  "
+print("\nOriginal Text:", name)
+print("Formatted Text:", utility.format_text(name))
+# Percentage calculation
+obtained = 450
+total = 500
+print("\nPercentage:",
+      utility.calculate_percentage(obtained, total), "%")
+# Factorial calculation
+number = 5
+print("\nFactorial of", number, ":",
+      utility.calculate_factorial(number))
+# File creation
+message = "Welcome to Python Utility Module!"
+print("\n", utility.create_file("sample.txt", message))
+# Read file
+print("File Content:", utility.read_file("sample.txt"))
+print("\n===== PROGRAM COMPLETED =====")
